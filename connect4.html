@@ -1,0 +1,24 @@
+<html>
+
+<head>
+    <title>Connect4 Game</title>
+    <link href="connect4.css" rel="stylesheet" />
+    <link href="custom.css" rel="stylesheet" />
+</head>
+
+<body>
+    <img class="centered" src="http://fontmeme.com/embed.php?text=Connect-Four&name=Bloodgutter 2000.ttf&size=100&style_color=33FF00" id="halloweenfont">
+    <p><span id="player"></span>
+        <center>
+            <div class="actions"><button onclick="onResetClick()">Start New Game</button></div>
+    </p>
+    <br />
+    </center>
+    <div id="board">
+        <div id="pieces"></div>
+        <center><img src="http://www.nonkit.com/smallbasic.files/Connect4Board.png" style="filter:invert(100%);" onclick="onBoardClicked(event)" onmousemove="onBoardMove(event)" /></center>
+    </div>
+    <script src="connect4.js"></script>
+</body>
+
+</html>

@@ -77,7 +77,7 @@ function reset() {
   }, 200)
 }
 
-function onResetClick() {
+function myButton() {
   reset();
 }
 

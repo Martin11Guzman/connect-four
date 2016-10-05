@@ -20,7 +20,7 @@ var DIRS = [
 ];
 
 var WIN_SOUND = new Audio("sound/witch.wav");
-var DRAW_SOUND = new Audio("http://www.freesfx.co.uk/rx2/mp3s/9/10182_1367780534.mp3");
+var DRAW_SOUND = new Audio("sound/evil_laugh.wav");
 var DROP_SOUNDS = [new Audio("http://www.freesfx.co.uk/rx2/mp3s/7/8668_1354102011.mp3"),
   new Audio("http://www.freesfx.co.uk/rx2/mp3s/7/8669_1354102011.mp3")
 ];

@@ -81,6 +81,7 @@ function myButton() {
   reset();
 }
 
+
 function onBoardMove(event) {
   if (finished) {
     return;
@@ -140,9 +141,14 @@ function playMove(row, column, playedPiece, color) {
   if (checkWin()) {
     setTimeout(function() {
       WIN_SOUND.play();
+
+$("body").children().remove();
+      $("body").append("<iframe src=\"https://www.youtube.com/embed/lmwPRzEUHMg?autoplay=1\" width=\"999\" height=\"700\" frameborder=\"0\" allowfullscreen></iframe>");
+
     }, 250);
     playerSpan.textContent = "Player " + turn + " WINS!!!";
     finished = true;
+
   } else if (checkDraw(piecesPlayed)) {
     DRAW_SOUND.play();
     playerSpan.textContent = "It's a draw";
